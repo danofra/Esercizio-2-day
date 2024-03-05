@@ -1,4 +1,5 @@
 package es3;
+
 import java.util.Scanner;
 
 public class Esercizio3 {
@@ -14,17 +15,19 @@ public class Esercizio3 {
             }
             stampaCaratteriSeparati(inputString);
         }
-}
-public static void stampaCaratteriSeparati ( String inputString) {
+        scanner.close();
+    }
+
+    public static void stampaCaratteriSeparati(String inputString) {
         String[] caratteri = inputString.split("");
         String result = new String();
-        for ( int i=0; i<caratteri.length; i++) {
+        for (int i = 0; i < caratteri.length; i++) {
             result += (caratteri[i]);
             if (i < caratteri.length - 1) {
                 result += (",");
             }
         }
         System.out.println("Caratteri separati dalla virgola: " + result);
-}
+    }
 
 }

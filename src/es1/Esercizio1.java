@@ -12,7 +12,7 @@ public class Esercizio1 {
         } else {
             System.out.println("Il numero dei caratteri della Stringa è pari");
         }
-
+        scanner.close();
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Inserisci un anno:");
         int inputyear = scanner1.nextInt();
@@ -21,6 +21,7 @@ public class Esercizio1 {
         } else {
             System.out.println("L'anno inserito non è bisestile");
         }
+        scanner1.close();
     }
 
     /* primo metodo */
